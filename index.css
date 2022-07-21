@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+/* 400 500 700 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+}
+/* Ai page css */
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.sideNav {
+  width: 10%;
+  display: grid;
+  box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.211);
+  grid-column: 2;
+}
+.sideNav .logo {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/* Hover for links */
+.link{
+    color: black;
+    text-decoration: none;
+}
+.link:nth-child(1):hover {
+  text-decoration: underline;
+}
+.link:nth-child(2):hover {
+  text-decoration: underline;
+}
+.link:nth-child(3):hover {
+  text-decoration: underline;
+}
+.link:nth-child(4):hover {
+  text-decoration: underline;
+}
+/* Hover links completed */
+
+.sideNav .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.contentContainer {
+  width: 100%;
+  background-color: rgb(239, 239, 239);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.contentContainer > .header {
+  display: flex;
+  overflow: hidden;
+  padding: 0 1rem 0 1rem;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #c6d4e2;
+}
+.header > .imageContainer {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.header p span {
+  font-weight: 700;
+}
+.imageContainer > img {
+  overflow: hidden;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  padding-bottom: 1rem;
+}
+.content > .date__content {
+  padding-top: 2rem;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.title__content {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.qoute__content {
+  margin-top: 0.5rem;
+}
+.content__image {
+  margin-top: 2rem;
+  width: 90%;
+  height: 400px;
+}
+.content__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.content__iteself {
+    margin-top: 2rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
